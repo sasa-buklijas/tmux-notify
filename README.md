@@ -110,6 +110,16 @@ The Tmux notify script uses your shell prompt suffix to check whether a command 
 
 Feel free to open [a pull](https://github.com/rickstaa/tmux-notify/pulls) request or [issue](https://github.com/rickstaa/tmux-notify/issues) if you think your shell prompt suffix should be included by default.
 
+### Execute custom notification commands
+
+You can execute a custom command after a process has finished by putting `set -g @tnotify-custom-cmd 'your custom command here"` in the `.tmux.conf` file. The custom command is executed in the pane where the process has finished. If you want to execute multiple commands, you can also put them in a bash script and execute this script (i.e. `set -g @tnotify-custom-cmd 'bash /path/to/script.sh"`).
+
+> **Warning**
+> The custom command is executed using the `eval` command, so [be careful with what you put in here](https://stackoverflow.com/a/17529221/8135687).
+
+> **Note**
+> Please consider contributing to [this repository](https://github.com/rickstaa/tmux-notify) if your custom command is useful for others.
+
 ## How does it work
 
 A naive approach. Checks if pane content ends with the bash prompt suffixes mentioned above every 10 seconds.
