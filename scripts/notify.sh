@@ -9,8 +9,6 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "${CURRENT_DIR}/helpers.sh"
 source "${CURRENT_DIR}/variables.sh"
 
-custom_command="echo 'hello world'"
-
 ## Functions
 
 # Handle cancelation of monitor job
