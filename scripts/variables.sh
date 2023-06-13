@@ -17,7 +17,7 @@ export PID_FILE_PATH="${PID_DIR}/${PANE_ID}.pid"
 ## Tnotify tmux options
 export prompt_suffixes="@tnotify-prompt-suffixes"
 export prompt_suffixes_default="$,#,%"
-export custom_notify_command="@tnotify-custom-notify-command"
+export custom_notify_command="@tnotify-custom-cmd"
 export custom_notify_command_default="bash ~/Desktop/test.bash"
 
 # Notification verbosity settings

@@ -112,7 +112,7 @@ Feel free to open [a pull](https://github.com/rickstaa/tmux-notify/pulls) reques
 
 ### Execute custom notification commands
 
-You can execute a custom command after a process has finished by putting `set -g @tnotify-custom-cmd 'your custom command here"` in the `.tmux.conf` file. The custom command is executed in the pane where the process has finished. If you want to execute multiple commands, you can also put them in a bash script and execute this script (i.e. `set -g @tnotify-custom-cmd 'bash /path/to/script.sh'`).
+You can execute a custom command after a process has finished by putting `set -g @tnotify-custom-cmd 'your custom command here'` in the `.tmux.conf` file. The custom command is executed in the pane where the process has finished. If you want to execute multiple commands, you can also put them in a bash script and execute this script (i.e. `set -g @tnotify-custom-cmd 'bash /path/to/script.sh'`).
 
 > **Warning**
 > The custom command is executed using the `eval` command, so [be careful with what you put in here](https://stackoverflow.com/a/17529221/8135687).
