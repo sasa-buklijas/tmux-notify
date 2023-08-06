@@ -17,6 +17,7 @@ Tmux plugin to notify you when processes are complete.
 *   [Pre-requisites](#pre-requisites)
 *   [Install](#install)
 *   [Usage](#usage)
+    *    [OSX](#osx)  
 *   [Configuration](#configuration)
     *   [Enable verbose notification](#enable-verbose-notification)
     *   [Change monitor update period](#change-monitor-update-period)
@@ -61,6 +62,9 @@ Use `prefix + I` to install.
 *   `prefix + alt + m`: Start monitoring a pane, return it in focus and notify when it finishes.
 
 *   `prefix + M`: Cancel monitoring of a pane.
+
+### OSX
+If Alt key is not working correctly check [https://superuser.com/questions/649960/option-key-does-not-work-as-meta-in-tmux](https://superuser.com/questions/649960/option-key-does-not-work-as-meta-in-tmux).
 
 ## Configuration
 
